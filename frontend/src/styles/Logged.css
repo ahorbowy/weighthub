@@ -1,0 +1,153 @@
+/* Menu Styles */
+.menu {
+    width: 14%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #6ac36a, #212420);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: width 0.3s ease;
+    z-index: 2;
+
+}
+
+.menu.visible {
+    width: 10%;
+}
+
+.menu.hidden {
+    width: 3%;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.menu div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #000000;
+    cursor: pointer;
+    transition: padding 0.3s ease;
+    /* transition effect for padding */
+}
+
+.menu div:hover {
+    padding-left: 20px;
+    /* increase left padding after mouse on */
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.menu-text {
+    margin-left: 15px;
+    opacity: 1;
+    transition: margin-left 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-text-hidden {
+    margin-left: -100px;
+    opacity: 0;
+    transition: margin-left 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-icon,
+.menu-icon2 {
+    max-width: 25px;
+    margin-right: 14px;
+    transition: max-width 0.3s ease, margin-right 0.3s ease;
+}
+
+/* Content Styles */
+.content {
+    width: 90%;
+    padding: 20px;
+    background: #ccc;
+    min-height: 100vh;
+    margin-left: 10%;
+    transition: margin-left 0.3s ease;
+}
+
+.container2 {
+    display: flex;
+    min-height: 100vh;
+    background: #ccc;
+}
+
+.menu.hidden+.content {
+    margin-left: 3%;
+}
+
+.menu-header .rotate-icon {
+    transition: transform 0.3s ease;
+}
+
+.menu-header.active .rotate-icon {
+    transform: rotate(360deg);
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* change to align-items: flex-start */
+    margin-top: auto;
+    padding: 10px;
+    margin-left: 0;
+
+}
+
+
+.user-info,
+.logout-button {
+    display: flex;
+    align-items: center;
+    transition: margin-left 0.3s ease, opacity 0.3s ease;
+}
+
+
+.menu div:nth-last-child(2) {
+    margin-top: auto;
+}
+
+.user-info img,
+.logout-button img {
+    max-width: 25px;
+    margin-right: 15px;
+    transition: max-width 0.3s ease, margin-right 0.3s ease;
+
+}
+
+.logout-button button {
+    margin-left: 15px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    color: #000000;
+    transition: margin-left 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.logout-button button.menu-text-hidden {
+    margin-left: -100px;
+    opacity: 0;
+}

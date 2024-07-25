@@ -1,0 +1,166 @@
+/* Form.css */
+.form {
+    text-align: left;
+    border-radius: 20px;
+    width: auto;
+    padding-left: 0;
+}
+
+.result-container {
+    width: 25%;
+    margin-left: 20%;
+    margin-top: -20%;
+    text-align: center;
+    position: relative;
+    /* Add relative position */
+}
+
+.result-container p {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Input Styles */
+.rounded-input-form {
+    position: relative;
+    padding: 10px;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    /* adjust as needed */
+}
+
+input.rounded-form,
+.submit.rounded-form {
+    padding: 100%;
+    width: 10%;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #4b8f41;
+}
+
+select.rounded-form {
+    width: 11.5%;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    padding: 11.5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #4b8f41;
+}
+
+/* Button Styles */
+.rounded-form-button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 11.3%;
+    background: linear-gradient(to bottom right, #6ac36a, #2d332c);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Link Styles */
+.form a {
+    text-decoration: none;
+    color: #4b8f41;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+/* Icon Toggle Styles */
+.icon-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4b8f41;
+}
+
+/* Dodatkowy styl dla funkcji AI Prompt */
+
+#ai-prompt-container {
+    float: left;
+    text-align: left;
+    border-radius: 20px;
+    width: 45%;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+#ai-prompt-form {
+    margin-top: 20px;
+}
+
+.ai-prompt-input {
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #4b8f41;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(50%);
+}
+
+.ai-prompt-submit {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* Dodajemy margines po prawej stronie */
+    width: calc(26%);
+    background: linear-gradient(to bottom right, #6ac36a, #2d332c);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Styl dla kontenera historii zapisanych odpowiedzi */
+.saved-responses-container {
+    float: left;
+    width: 50%;
+}
+
+/* Styl dla poszczególnych odpowiedzi */
+.saved-response {
+    border: 2px solid #a9aea9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* dodajemy cień */
+}
+
+/* Styl dla przycisku delete */
+.delete-button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    width: calc(20%);
+    background: linear-gradient(to bottom right, #6ac36a, #2d332c);
+    color: #fff;
+    cursor: pointer;
+}
